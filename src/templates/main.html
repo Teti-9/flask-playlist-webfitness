@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Webfitness</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="h1-title">
+            Procure por uma playlist!
+        </h1>
+    </div>
+    <form id="searchForm" role="search">
+        <label class='procure-playlist' for="search">Procure por uma playlist</label>
+        <input id="search" type="search" placeholder="Search..." autofocus required />
+        <button class="search-playlist" type="submit">Go</button>
+    </form>
+
+    <button class="additionalButton1" id="additionalButton1" onclick="myPlaylists()">Minhas Playlists</button>
+
+    <div id="results"></div>
+
+    <button class="additionalButton" id="additionalButton">Abrir no spotify</button>
+
+    <div id="my-playlists"></div>
+
+    <button class="additionalButton2" id="additionalButton2" onclick="openForm()">Criar nova playlist</button>
+    <button class="additionalButton4" id="additionalButton4">Adicionar Música</button>
+
+    <div id="latest-songs"></div>
+
+    <button class="additionalButton5" id="additionalButton5"">Adicionar a Playlist</button>
+    
+    <button class=" additionalButton6" id="additionalButton6" onclick="home()">Voltar</button>
+
+    <div class=" form-popup" id="myForm">
+        <form class="form-container" id="newPlaylistForm">
+            <h1>Nova Playlist</h1>
+
+            <label for="text"><b>Nome</b></label>
+            <input type="text" id="name" name="name" placeholder="Nome da playlist" required>
+
+            <label for="text"><b>Descrição</b></label>
+            <input type="text" id="desc" name="desc" placeholder="Descrição da playlist" required>
+
+            <button type="submit" class="additionalButton3">Criar</button>
+            <button type="button" class="additionalButton3cancel" onclick="closeForm()">Fechar</button>
+        </form>
+    </div>
+
+    <script src="../static/main.js"></script>
+    <script src="../static/myplaylists.js"></script>
+    <script src="../static/form.js"></script>
+    <script src="../static/home.js"></script>
+</body>
+
+</html>
